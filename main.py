@@ -9,7 +9,7 @@ with open("a.txt", "r", encoding='UTF-8') as f:
 # b.txtを書き込みモードで開く
 with open('b.txt', 'w', encoding='UTF-8') as f:
     # ファイルの内容を1行ずつ書き込む
-    for line in lines:
+    for line in reversed(lines):
         # 文字を反転する
         converted_line=line[::-1]
         # ファイルに書き込む
